@@ -475,7 +475,7 @@ body {
 .mobile-image {
     width: 80%;
     height: 80%;
-    margin-top: -8rem;
+    margin-top: -7rem;
     display: flex;
     flex-direction: column;
     background-color: #0a0a0a;
@@ -502,7 +502,7 @@ body {
 
 .link-up-with-me {
     width: 45%;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 /* About Me and Skills Section */
