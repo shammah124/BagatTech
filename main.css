@@ -4,12 +4,6 @@
     --bg-shadow-rgba: rgba(0, 0, 0, 0.6)
 }
 
-button:focus, button:active,
-a:focus, a:active {
-    background-color: transparent; /* Ensure the color stays the same */
-    outline: none; /* Remove default focus outline */
-}
-
 body {
     background-image: linear-gradient(var(--bg-cover), var(--bg-cover)), url(images/bg_image.jpeg);
     background-size: contain;
@@ -129,7 +123,7 @@ body {
     flex-direction: column;
 }
 .my-name {
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 2.5rem;
 }
 
@@ -379,11 +373,6 @@ body {
 .footer-sm-icons a{
     color: var(--white-color);
 }
-/* -webkit-tap-highlight-color: transparent;  in the reset_css.css have done the function below*/
-.footer-sm-icons a:focus, .footer-sm-icons a:active {
-    background-color: transparent; /* Ensure the color stays the same */
-    outline: none; /* Remove default focus outline */
-}
 
 
 /* Mobile Responsive Design */
@@ -425,7 +414,7 @@ body {
 /* Nav For Mobile Box Side */
 .mobile-box {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 3rem;
     width: 100%;
     height: 70vh;
@@ -505,7 +494,7 @@ body {
     align-items: center;
 }
 .my-name {
-    font-size: 1.3rem;
+    font-size: small;
     line-height: 1.5rem;
 }
 
