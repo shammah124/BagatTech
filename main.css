@@ -1,0 +1,592 @@
+:root {
+    --bg-cover: rgba(0, 0, 0, 0.9);
+    --white-color: white;
+    --bg-shadow-rgba: rgba(0, 0, 0, 0.6)
+}
+
+body {
+    background-image: linear-gradient(var(--bg-cover), var(--bg-cover)), url(images/bg_image.jpeg);
+    background-size: contain;
+    background-attachment: fixed;
+    color: var(--white-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+/* Main Header */
+.main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--white-color);
+    height: 4rem;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px var(--bg-shadow-rgba);
+    z-index: 1000;
+}
+
+/* Hamburger */
+.hamburger {
+    display: none;
+}
+
+/* Logo and Brand Name */
+.logo-link {
+    text-decoration: none;
+}
+.logo-brand {
+    display: flex;
+    margin-left: 5rem;
+    align-items: center;
+    color: black;
+}
+.logo {
+    margin-top: 0.5rem;
+}
+.logo img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 10rem;
+}
+.logo-brand .brand-name {
+    font-size: 0.8rem;
+}
+
+/* Navigation */
+.main-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.main-nav ul li a {
+    display: inline-block;
+    padding: 1rem;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+.main-nav ul li a:hover {
+    background-color: #1e1e1e;
+    color: var(--white-color);
+    height: 100%;
+    border-radius: 2rem;
+    transition: all ease-in-out 0.5s;
+}
+
+/* Nav For Mobile Box Side */
+.mobile-box {
+    display: none;
+}
+
+/* Social Media Icons */
+.sm-icons {
+    display: flex;
+    margin-right: 1rem;
+}
+
+.sm-icons p {
+    padding: 0.5rem;
+    color: black;
+}
+
+.sm-icons p:hover {
+    background-color: aliceblue;
+    border-radius: 1rem;
+    transition: all ease-in-out 0.5s;
+}
+
+.sm-icons p a {
+    color: black;
+}
+
+
+
+/* Main Section */
+.main-section {
+    width: 80%;
+    margin: 10rem auto;
+    display: flex;
+    column-gap: 10rem;
+    padding: 100px 20px 20px; /* Adjusted to avoid being hidden behind the fixed header */
+}
+/* My Image in Mobile Responsiveness Section*/
+.mobile-image {
+    display: none;
+}
+/* Introducing Me in Main Section */
+.introducing-me {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.my-name {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.link-up-with-me {
+    border: none;
+    width: 30%;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: rgb(221, 188, 3);
+    color: var(--white-color);
+    font-weight: bolder;
+}
+
+.link-up-with-me:hover {
+    background-color: blue;
+    transition: all ease-in 0.5s;
+}
+
+/* Image Section in Main Section*/
+.my-image-section {
+    width: 60%;
+    height: 30rem;
+    margin-top: -5rem;
+    background-color: rgb(19, 17, 17);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-image-section:hover {
+    background-color: black;
+    transition: all ease-in-out 0.5s;
+}
+
+.my-image-section img {
+    border-radius: 20rem;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* About Me and Skills Section */
+.about-me-and-skills {
+    background-color: var(--white-color);
+    margin-top: -8.3rem;
+    padding-bottom: 3rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10rem;
+}
+
+/* About Me Section */
+.about-me {
+    width: 40%;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me h2 {
+    line-height: 5rem;
+}
+
+.about-me .about-me-buttons {
+    display: flex;
+    column-gap: 2rem;
+}
+
+.about-me .about-me-buttons .hire-me {
+    border: none;
+    width: 30%;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    cursor: pointer;
+    background-color: #1e1e1e;
+    color: var(--white-color);
+    font-weight: bolder;
+}
+
+.about-me .about-me-buttons .hire-me:hover {
+    border: 0.01rem solid #cccaca;
+    width: 30%;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    cursor: pointer;
+    background-color: var(--white-color);
+    color: #1e1e1e;
+    font-weight: bolder;
+    transition: all ease-in-out 0.2s;
+}
+
+.about-me .about-me-buttons .my-cv {
+    border: 0.01rem solid #cccaca;
+    width: 30%;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    cursor: pointer;
+    background-color: var(--white-color);
+    color: #1e1e1e;
+    font-weight: bolder;
+}
+
+.about-me .about-me-buttons .my-cv:hover {
+    width: 30%;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    cursor: pointer;
+    background-color: #1e1e1e;
+    color: var(--white-color);
+    font-weight: bolder;
+    transition: all ease-in-out 0.2s;
+}
+
+/* Skills Section */
+.my-skills {
+    width: 60%;
+    margin-top: 5rem;
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-skills .skill-percent {
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-skills .bar-bg {
+    margin-bottom: 1.5rem;
+    height: 0.7rem;
+    width: 100%;
+    background-color: #1e1e1e;
+    border-radius: 3rem;
+}
+
+.my-skills .percent-bar1 {
+    height: 0.7rem;
+    width: 85%;
+    background-color: blue;
+    border-radius: 3rem;
+}
+.my-skills .percent-bar2 {
+    height: 0.7rem;
+    width: 75%;
+    background-color: blue;
+    border-radius: 3rem;
+}
+.my-skills .percent-bar3 {
+    height: 0.7rem;
+    width: 65%;
+    background-color: blue;
+    border-radius: 3rem;
+}
+.my-skills .percent-bar4 {
+    height: 0.7rem;
+    width: 65%;
+    background-color: blue;
+    border-radius: 3rem;
+}
+.my-skills .percent-bar5 {
+    height: 0.7rem;
+    width: 45%;
+    background-color: blue;
+    border-radius: 3rem;
+}
+
+/* Accomplishment Section */
+.accomplishments {
+    background-color: rgb(247, 246, 246);
+    color: black;
+    height: 20rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.accom-number {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: rgb(172, 166, 166);
+}
+
+/* Footer Section */
+.my-footer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.my-footer h3 {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+.my-footer p {
+    color: #969393;
+}
+/* Contact Me Button */
+.contact-me {
+    border: 0.01rem solid rgb(221, 188, 3);
+    border-radius: 20rem;
+    width: 10%;
+    margin-top: 2rem;
+    padding: 0.7rem;
+    cursor: pointer;
+    background-color: #1e1e1e;
+    color: var(--white-color);
+    font-weight: bolder;
+}
+
+.contact-me:hover {
+    border: 0.01rem solid #1e1e1e;
+    color: black;
+    background-color: var(--white-color);
+    transition: all ease-in-out 0.2s;
+}
+
+.footer {
+    border-top: 0.1rem solid #3d3c3c;
+    border-radius: 0.1rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30rem;
+}
+
+.company-year {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.footer-sm-icons {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    column-gap: 1rem;
+}
+
+.footer-sm-icons a{
+    color: var(--white-color);
+}
+
+
+/* Mobile Responsive Design */
+@media only screen and (max-width: 650px) {
+    /* Main Header */
+.main-header {
+    height: 3rem;
+}
+/* Hamburger */
+.hamburger {
+    display: block;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.hamburger #bars:hover {
+    color: blue;
+}
+.hamburger #x-mark:hover {
+    color: red;
+}
+/* Logo and Brand Name */
+.logo-link {
+    margin-right: 1rem;
+}
+.logo img {
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 10rem;
+}
+.logo-brand .brand-name {
+    font-size: 0.7rem;
+}
+
+/* Navigation */
+.main-nav {
+    display: none;
+}
+/* Nav For Mobile Box Side */
+.mobile-box {
+    display: none;
+    position: absolute;
+    top: 3rem;
+    width: 100%;
+    height: 70vh;
+    background-color: #1e1e1e;
+    z-index: 900;
+}
+.mobile-box .logo {
+    display: flex;
+    margin: auto 0;
+    justify-content: center;
+}
+.mobile-box ul {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+.mobile-box ul li{
+    border: 1px solid #161616;
+}
+.mobile-box ul li:hover{
+    border: 1px solid #161616;
+}
+.mobile-box ul li:last-child{
+    padding: 2rem;
+    border: none;
+}
+.mobile-box ul li a {
+    display: inline-block;
+    width: 100%;
+    padding: 1.5rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+}
+.sm-icons {
+    display: none;
+}
+
+/* Main Section */
+.main-section {
+    width: 100%;
+    margin: 7rem auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+}
+/* My Image in Mobile Responsiveness Section */
+.my-image-section {
+    width: 100%;
+    display: none;
+}
+.mobile-image {
+    width: 80%;
+    height: 80%;
+    margin-top: -5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #0a0a0a;
+    box-shadow: 0rem 0.1rem 0.5rem rgba(94, 93, 93, 0.5);
+}
+
+.mobile-image img {
+    border-radius: 2rem;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+/* Introducing Me in Main Section */
+.introducing-me {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.my-name {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+
+.link-up-with-me {
+    width: 45%;
+    margin-bottom: 1rem;
+}
+
+/* About Me and Skills Section */
+.about-me-and-skills {
+    width: 100%;
+    flex-direction: column;
+}
+
+/* About Me Section */
+.about-me {
+    width: 90%;
+    margin-left: 0;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me h2 {
+    line-height: 2rem;
+}
+
+.about-me .about-me-buttons {
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me .about-me-buttons .hire-me {
+    width: 90%;
+}
+
+.about-me .about-me-buttons .hire-me:hover {
+    width: 90%;
+}
+
+.about-me .about-me-buttons .my-cv {
+    width: 100%;
+}
+
+.about-me .about-me-buttons .my-cv:hover {
+    width: 100%;
+}
+
+/* Skills Section */
+.my-skills {
+    width: 90%;
+    margin-right: 0;
+}
+
+/* Accomplishment Section */
+.accomplishments {
+    flex-wrap: wrap;
+}
+.accom-number {
+    font-size: 2rem;
+}
+
+/* Footer Section */
+.my-footer h3 {
+    font-size: 1.5rem;
+}
+/* Contact Me Button */
+.contact-me {
+    width: 50%;
+}
+
+.footer {
+    height: 100%;
+    width: 90%;
+    margin-top: 2rem;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.footer-sm-icons {
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-sm-icons p {
+    margin-top: -3rem;
+}
+
+.footer-sm-icons a{
+    color: var(--white-color);
+}
+}
