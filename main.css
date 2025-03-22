@@ -4,6 +4,12 @@
     --bg-shadow-rgba: rgba(0, 0, 0, 0.6)
 }
 
+button:focus, button:active,
+a:focus, a:active {
+    background-color: transparent; /* Ensure the color stays the same */
+    outline: none; /* Remove default focus outline */
+}
+
 body {
     background-image: linear-gradient(var(--bg-cover), var(--bg-cover)), url(images/bg_image.jpeg);
     background-size: contain;
@@ -375,7 +381,7 @@ body {
 }
 /* -webkit-tap-highlight-color: transparent;  in the reset_css.css have done the function below*/
 .footer-sm-icons a:focus, .footer-sm-icons a:active {
-    background-color: #1e1e1e; /* Ensure the color stays the same */
+    background-color: transparent; /* Ensure the color stays the same */
     outline: none; /* Remove default focus outline */
 }
 
@@ -567,7 +573,7 @@ body {
     font-size: 1.5rem;
 }
 .my-footer #footer-small-text {
-    width: 95%;
+    width: 80%;
 }
 /* Contact Me Button */
 .contact-me {
